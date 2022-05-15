@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <script>
+      const alerts = function() {
+
+        setTimeout(function() {
+          window.alert("Data Submitted");
+        }, 4000)
+      }
+    </script>
+
+    <title>Event Click LatLng</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="map.css" />
+    <script type="module" src="map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTxbXDMvNbDxMPDG_5-4yY28Q8YjeGr68&callback=initMap&v=weekly" -->
+    </script>
+  </head>
+  <body>
+    <form method="POST" action="/post_feedback">
+      <input class="input email" name="email" type="email" placeholder="E-mail" required>
+      <input class="latitude input" name="lat" type="text" placeholder="Latitude" required>
+      <input class="longitude input" name="lng" type="text" placeholder="Longitude" required>
+      <input class="btn" type="submit" value="Submit">
+  </form>
+  </div>
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    
+  </body>
+</html>
