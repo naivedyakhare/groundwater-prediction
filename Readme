@@ -1,5 +1,5 @@
 To run this code you need to install MongoDB (MongoDB compass to make things easy)
-all the given dependencies in the exact same folder as the project
+and all the given dependencies in the exact same folder as the project
  - Mongod
  - Express
  - body-parser
